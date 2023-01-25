@@ -1,36 +1,11 @@
-<html>
-    <head>
-        <meta charset="utf-8"> <!-- Important: rapi-doc uses utf8 characters -->
-        <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
-    </head>
-    <body> 
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blog</title><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://andy-davies.github.io/andy-davies.github.io/"><meta property="og:title" content="Blog"><meta property="og:site_name" content="Blog"><meta property="og:description" content=""><meta property="og:url" content="https://andy-davies.github.io/andy-davies.github.io/"><meta property="og:type" content="website"><link rel="stylesheet" href="https://andy-davies.github.io/andy-davies.github.io/assets/css/style.css?v=9f3114ee6a3a914185a66fc3fba58cd0"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Blog","url":"https://andy-davies.github.io/andy-davies.github.io/"}</script></head><body><div class="site-container"><header class="top" id="js-header"><a class="logo" href="https://andy-davies.github.io/andy-davies.github.io/">Blog</a><div class="search"><div class="search__overlay js-search-overlay"><div class="search__overlay-inner"><button class="search__close js-search-close" aria-label="Close">Close</button></div></div><button class="search__btn js-search-btn" aria-label="Search"><svg role="presentation" focusable="false"><use xlink:href="https://andy-davies.github.io/andy-davies.github.io/assets/svg/svg-map.svg#search"/></svg></button></div></header><main><div class="hero"><header class="hero__content"><div class="wrapper"><h1>Welcome to my blog :)</h1><p>Create a unique and beautiful blog quickly and easily.</p><div class="post__meta post__meta--author"><a href="https://andy-davies.github.io/andy-davies.github.io/authors/andy-davies/" class="feed__author">Andy Davies</a></div></div></header></div><div class="feed"></div></main><footer class="footer"><div class="footer__copyright"><p>Powered by Publii</p></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg><use xlink:href="https://andy-davies.github.io/andy-davies.github.io/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script defer="defer" src="https://andy-davies.github.io/andy-davies.github.io/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
 
-    </body>
-
-    <script>
-        
-            let query = window.location.search;
-            let splits = query.split("=");
-        
-            let content = `<rapi-doc spec-url="${splits[1]}" 
-                render-style="focused" 
-              
-                theme="light" 
-                schema-style="table"  
-                show-header="false" 
-                show-info="false">
-            </rapi-doc>`;
-       
-        /*
-            let content = `<rapi-doc-mini 
-                spec-url="${splits[1]}" 
-                match-paths = "^get"
-                match-type = "regex"
-                paths-expanded = "true"
-                schema-style="table">
-            </rapi-doc-mini>`;
-                */
-            document.write(content);
-
-    </script>
-</html>
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>
